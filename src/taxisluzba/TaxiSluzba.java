@@ -25,6 +25,12 @@ import voznja.VoznjaTel;
 
 public class TaxiSluzba {
 	
+	private long pib;
+    private String naziv;
+    private String adress;
+    private int cenaStartaVoznje;
+    private int cenaPoKilometru;
+	
 	private ArrayList<Vozac> vozaci;
     private ArrayList<Dispecer> dispeceri;
     private ArrayList<Automobil> automobili;
@@ -112,13 +118,6 @@ public class TaxiSluzba {
     public void setVozaci(ArrayList<Vozac> vozaci) {
         this.vozaci = vozaci;
     }
-
-    private long pib;
-    private String naziv;
-    private String adress;
-    private int cenaStartaVoznje;
-    private int cenaPoKilometru;
-
 
     private static JLabel userLabel;
     private static JTextField usernameText;
@@ -447,13 +446,9 @@ public class TaxiSluzba {
         return prihvacene;
     }
 
-///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
-    ////////////////FUNKCIJE SNIMANJA//////////////////
-
     public void saveVoznjeTel(){
         try{
-            File file = new File("src/com/jojicluka/text/voznjetel.txt");
+            File file = new File("src/text/voznjetel.txt");
             BufferedWriter bw = new BufferedWriter(new FileWriter(file));
             String s = "";
             for (VoznjaTel voznjaTel : voznjeTel){
@@ -471,7 +466,7 @@ public class TaxiSluzba {
 
     public void saveVoznjeApp(){
         try{
-            File file = new File("src/com/jojicluka/text/voznjeapp.txt");
+            File file = new File("src/text/voznjeapp.txt");
             BufferedWriter bw = new BufferedWriter(new FileWriter(file));
             String s = "";
             for (VoznjaApp voznjaApp : voznje){
@@ -489,7 +484,7 @@ public class TaxiSluzba {
 
     public void saveMusterije() {
         try{
-            File file = new File("src/com/jojicluka/text/musterije.txt");
+            File file = new File("src/text/musterije.txt");
             BufferedWriter bw = new BufferedWriter(new FileWriter(file));
             String s = "";
             for (Musterija musterija : musterije) {
@@ -506,7 +501,7 @@ public class TaxiSluzba {
 
     public void saveVozace() {
         try{
-            File file = new File("src/com/jojicluka/text/vozaci.txt");
+            File file = new File("src/text/vozaci.txt");
             BufferedWriter bw = new BufferedWriter(new FileWriter(file));
             String s = "";
             for (Vozac vozac : vozaci) {
@@ -523,7 +518,7 @@ public class TaxiSluzba {
 
     public void saveDispecere() {
         try{
-            File file = new File("src/com/jojicluka/text/dispeceri.txt");
+            File file = new File("src/text/dispeceri.txt");
             BufferedWriter bw = new BufferedWriter(new FileWriter(file));
             String s = "";
             for (Dispecer dispecer : dispeceri) {
@@ -540,7 +535,7 @@ public class TaxiSluzba {
 
     public void saveAutomobile() {
         try{
-            File file = new File("src/com/jojicluka/text/automobili.txt");
+            File file = new File("src/text/automobili.txt");
              BufferedWriter bw = new BufferedWriter(new FileWriter(file));
              String s = "";
              for(Automobil automobil : automobili) {

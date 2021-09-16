@@ -10,12 +10,15 @@ public class Vozac extends Korisnik {
 		  
 	 }
 
-	public Vozac(int plata, int brClanskeKarte, boolean postoji) {
-		super();
+	public Vozac(String id, String username, String password, String ime, String prezime, long jmbg, String adress,
+			Pol pol, long brTel, int plata, int brClanskeKarte, boolean postoji) {
+		super(id, username, password, ime, prezime, jmbg, adress, pol, brTel);
 		this.plata = plata;
 		this.brClanskeKarte = brClanskeKarte;
 		this.postoji = postoji;
 	}
+
+
 
 	public int getPlata() {
 		return plata;
