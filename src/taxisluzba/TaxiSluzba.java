@@ -275,7 +275,7 @@ public class TaxiSluzba {
 
     public void loadVozace() {
         try {
-            File file = new File("src/com/jojicluka/text/vozaci.txt");
+            File file = new File("src/text/vozaci.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line;
             while((line = reader.readLine()) != null) {
@@ -306,7 +306,7 @@ public class TaxiSluzba {
 
     public void loadVoznjeApp() {
         try {
-            File file = new File("src/voznjeapp.txt");
+            File file = new File("src/text/voznjeapp.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line;
             while((line = reader.readLine()) != null) {

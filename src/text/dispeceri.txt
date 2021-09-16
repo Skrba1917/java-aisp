@@ -1,2 +1,2 @@
-301|dispecer|pass|luka|test|3002003553211|Jug Bogdana 3|Muski|0663332113|60000|10133|1|true
-302|dispecer2|testiranje|zju|testt|2005001800074|Test podatak 3|Zenski|0670112020|65000|10032|2|true
+301|marko|123|Marko|Markovic|125116111|Sever 4|Muski|0641121151|55000|11011|1|true
+302|milica|123|Milica|Milicevic|112116111|Jug 5|Zenski|06117171181|60000|11212|2|true
