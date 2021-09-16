@@ -1,5 +1,1 @@
-2001|30-08-2021 00:43:39|Aleksandrova 23|Mileticeva 119|com.jojicluka.korisnici.Musterija@5a1e1ddc|com.jojicluka.korisnici.Vozac@764f0252|53|45|ODBIJENA|true|102|201
-2002|27-08-2021 20:13:21|Jug Bogdana 53|Vojvodjanska 10|com.jojicluka.korisnici.Musterija@304aab6c|com.jojicluka.korisnici.Vozac@6a31fab0|11|21|ZAVRSENA|true|101|202
-2003|2021-09-05|Novosadska 33|Brace Ribnikar 11|com.jojicluka.korisnici.Musterija@406bead7|com.jojicluka.korisnici.Vozac@4e382d1a|0|0|DODELJENA|true|101|203
-2004|2021-09-05|Lastina 81|Cara Lazara 12|com.jojicluka.korisnici.Musterija@2bccfe7a|com.jojicluka.korisnici.Vozac@4e4d75c9|33|10|ZAVRSENA|true|102|201
-2005|2021-09-10|Bulevar Cara Lazara |Centar|com.jojicluka.korisnici.Musterija@516f0385|com.jojicluka.korisnici.Vozac@5eb0b44f|12|24|ZAVRSENA|true|101|202
+0|2021-09-16|Sever 5|Jug 7|Korisnik [id=null, username=null, password=null, ime=null, prezime=null, jmbg=0, adress=null, pol=null, brTel=0]|Vozac [plata=0, brClanskeKarte=0, postoji=false, id=null, username=null, password=null, ime=null, prezime=null, jmbg=0, adress=null, pol=null, brTel=0]|0|0|PRIHVACENA|true|101|201

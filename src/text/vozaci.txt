@@ -1,5 +1,3 @@
-201|vozacizmena|passizmena|alen|prezimic|3002003553211|Aleksandrova 2|Muski|663332113|60000|10133|true
-202|vozac23|testiranje|zju|testt|2005001800074|Lastina 3|Muski|670112020|65000|10032|true
-203|vozac3|testiranje1|zju|testt|2005001800044|Lastina 32|Muski|670112020|65000|10032|true
-204|vozac7|testiranje1|zju|testt|2005001800044|Lastina 32|Muski|670112020|65000|10032|false
-205|testvozac|testpassword|Testarosa|Testarosic|200300478932|Vojvode Testiranja 23|Muski|643325354|59000|10033|true
+201|nikola|123|Nikola|Nikolic|115111221|Sever 1|Muski|1111901|65000|01011|true
+202|predrag|123|Predrag|Predragovic|1917181981|Jug 3|Muski|15111|45000|11111|true
+203|jovana|123|Jovana|Jovanovic|115111611|Zapad 21|Zenski|971718|55000|00321|true

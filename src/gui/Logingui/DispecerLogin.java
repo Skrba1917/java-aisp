@@ -80,7 +80,7 @@ public class DispecerLogin extends JFrame {
     }
     public static boolean verifyLoginDispecer(String userCheck, String passCheck){
         try{
-            File file = new File("src/com/jojicluka/text/dispeceri.txt");
+            File file = new File("src/text/dispeceri.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line;
             while ((line = reader.readLine()) != null) {

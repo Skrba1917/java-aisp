@@ -17,11 +17,11 @@ public class Login extends JFrame {
     private JLabel lblMusterija = new JLabel("Musterija");
     private JLabel lblVozac = new JLabel("Vozac");
     private JLabel lblDispecer = new JLabel("Dispecer");
-    private ImageIcon iconMusterija = new ImageIcon("src/png/musterija.png");
+    private ImageIcon iconMusterija = new ImageIcon("src/ikonice/Screenshot_2.jpg");
     private JButton btnMusterija = new JButton(iconMusterija);
-    private ImageIcon iconVozac = new ImageIcon("src/png/vozac.png");
+    private ImageIcon iconVozac = new ImageIcon("src/ikonice/Screenshot_1.jpg");
     private JButton btnVozac = new JButton(iconVozac);
-    private ImageIcon iconDispecer = new ImageIcon("src/png/dispecer.png");
+    private ImageIcon iconDispecer = new ImageIcon("src/ikonice/Screenshot_3.jpg");
     private JButton btnDispecer = new JButton(iconDispecer);
     private JPanel mainPanel;
 

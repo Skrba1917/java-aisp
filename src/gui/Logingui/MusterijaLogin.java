@@ -81,7 +81,7 @@ public class MusterijaLogin extends JFrame{
     }
     public static boolean verifyLoginMusterija(String userCheck, String passCheck){
         try{
-            File file = new File("src/com/jojicluka/text/musterije.txt");
+            File file = new File("src/text/musterije.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line;
             while ((line = reader.readLine()) != null) {
