@@ -29,6 +29,11 @@ public abstract class Korisnik {
 		this.pol = pol;
 		this.brTel = brTel;
 	}
+	
+	 public Korisnik(String ime, String prezime){
+	        this.ime = ime;
+	        this.prezime = prezime;
+	    }
 
 	public String getId() {
 		return id;

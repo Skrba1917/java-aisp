@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.GregorianCalendar;
+import java.util.Locale;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -527,6 +528,59 @@ public class TaxiSluzba {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    
+    public ArrayList<Vozac> kombinovanaPretraga(Vozac vozac) {
+        ArrayList<Vozac> returnIme = new ArrayList<>();
+        ArrayList<Vozac> returnPrezime = new ArrayList<>();
+        ArrayList<Vozac> returnPlata = new ArrayList<>();
+        ArrayList<Vozac> returnAutomobil = new ArrayList<>();
+
+        for(Vozac vozac1 : vozaci) {
+            if(vozac.getIme() == null || vozac.getIme().equals("")){
+                returnIme = vozaci;
+                break;
+            }
+            if (vozac1.getIme().toLowerCase(Locale.ROOT).contains(vozac.getIme().toLowerCase(Locale.ROOT))){
+                returnIme.add(vozac1);
+                System.out.println(returnIme);
+            }
+        }
+
+        for(Vozac vozac1 : vozaci) {
+            if(vozac.getPrezime() == null || vozac.getPrezime().equals("")){
+                returnPrezime = vozaci;
+                break;
+            }
+            if (vozac1.getPrezime().toLowerCase(Locale.ROOT).contains(vozac.getPrezime().toLowerCase(Locale.ROOT))){
+                returnPrezime.add(vozac1);
+                System.out.println("Usao sam u prezime");
+            }
+        }
+
+        for(Vozac vozac1 : vozaci){
+            if(vozac.getPlata() == 0){
+                returnPlata = vozaci;
+                break;
+            }
+            if(vozac1.getPlata() == vozac.getPlata()){
+                returnPlata.add(vozac1);
+                System.out.println("Usao sam u plate");
+            }
+        }
+
+//        for(Automobil automobil: automobili) {
+  //          if(vozac.getIdVozila() == -1) {
+    //            continue;
+      //      }
+      //  }
+        System.out.println("Imena: "+ returnIme);
+        System.out.println("Prezimena "+ returnPrezime);
+        System.out.println("Plate " + returnPlata);
+       returnIme.retainAll(returnPrezime);
+       returnIme.retainAll(returnPlata);
+
+       return returnIme;
     }
 
     public void saveVoznjeTel(){
