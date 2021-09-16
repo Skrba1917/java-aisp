@@ -6,17 +6,18 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.GregorianCalendar;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
-
 import automobil.Automobil;
 import korisnik.Dispecer;
 import korisnik.Musterija;
 import korisnik.Pol;
+import korisnik.Ponuda;
 import korisnik.Vozac;
 import voznja.NacinPorucivanja;
 import voznja.StatusVoznje;
@@ -30,6 +31,13 @@ public class TaxiSluzba {
     private String adress;
     private int cenaStartaVoznje;
     private int cenaPoKilometru;
+    
+    private static JLabel userLabel;
+    private static JTextField usernameText;
+    private static JLabel passLabel;
+    private static JPasswordField passwordText;
+    private static JButton button;
+    private static JLabel provera;
 	
 	private ArrayList<Vozac> vozaci;
     private ArrayList<Dispecer> dispeceri;
@@ -37,6 +45,7 @@ public class TaxiSluzba {
     private ArrayList<Musterija> musterije;
     private ArrayList<VoznjaApp> voznje;
     private ArrayList<VoznjaTel> voznjeTel;
+    private ArrayList<Ponuda> ponude;
 
     public TaxiSluzba(){
         this.vozaci = new ArrayList<Vozac>();
@@ -45,6 +54,7 @@ public class TaxiSluzba {
         this.musterije = new ArrayList<Musterija>();
         this.voznje = new ArrayList<VoznjaApp>();
         this.voznjeTel = new ArrayList<VoznjaTel>();
+        this.ponude = new ArrayList<Ponuda>();
 
         loadAutomobile();
         loadVoznjeApp();
@@ -118,13 +128,10 @@ public class TaxiSluzba {
     public void setVozaci(ArrayList<Vozac> vozaci) {
         this.vozaci = vozaci;
     }
-
-    private static JLabel userLabel;
-    private static JTextField usernameText;
-    private static JLabel passLabel;
-    private static JPasswordField passwordText;
-    private static JButton button;
-    private static JLabel provera;
+    
+    public ArrayList<VoznjaApp> getVoznjeApp(){
+        return voznje;
+    }
 
     public Musterija nadjiMusteriju (String username) {
         for (Musterija musterija : musterije) {
@@ -395,7 +402,17 @@ public class TaxiSluzba {
         }
         return sveVoznje;
     }
-
+    
+    public ArrayList<VoznjaApp> sveVoznjeCekanje(){
+        ArrayList<VoznjaApp> cekanje = new ArrayList<VoznjaApp>();
+        for(VoznjaApp voznjaApp : voznje){
+            if(voznjaApp.isPostoji() && voznjaApp.getStatusVoznje().equals(StatusVoznje.KREIRANA_NA_CEKANJU)){
+                cekanje.add(voznjaApp);
+            }
+        }
+        return cekanje;
+    }
+    
     public ArrayList<VoznjaApp> sveVoznjeApp() {
         ArrayList<VoznjaApp> sveVoznje = new ArrayList<VoznjaApp>();
         for (VoznjaApp voznjaApp : voznje) {
@@ -404,6 +421,27 @@ public class TaxiSluzba {
             }
         }
         return sveVoznje;
+    }
+    
+    public String returnVozacIdAukcija(String idVoznje){
+        try {
+            System.out.println(idVoznje);
+            ArrayList<korisnik.Ponuda> odgovarajucePonude = new ArrayList<Ponuda>();
+            for(Ponuda ponuda : ponude) {
+                if(ponuda.getIdVoznje().equals(idVoznje)){
+                    odgovarajucePonude.add(ponuda);
+                }
+            }
+            System.out.println(odgovarajucePonude);
+            Collections.sort(odgovarajucePonude);
+            System.out.println(odgovarajucePonude);
+            Ponuda glavnaPonuda = odgovarajucePonude.get(0);
+            String idVozaca = glavnaPonuda.getIdVozaca();
+            return idVozaca;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public ArrayList<Vozac> sviVozaci(){
