@@ -18,7 +18,6 @@ import javax.swing.table.DefaultTableModel;
 import korisnik.Vozac;
 import taxisluzba.TaxiSluzba;
 
-
 public class DispecerPrikazVozaca extends JFrame{
 	private JTable tabela;
     private DefaultTableModel dtm;
