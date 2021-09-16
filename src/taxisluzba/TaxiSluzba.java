@@ -132,6 +132,8 @@ public class TaxiSluzba {
     public ArrayList<VoznjaApp> getVoznjeApp(){
         return voznje;
     }
+    
+    public ArrayList<Ponuda> getPonude(){return ponude;}
 
     public Musterija nadjiMusteriju (String username) {
         for (Musterija musterija : musterije) {
@@ -149,6 +151,16 @@ public class TaxiSluzba {
             }
         }
         return null;
+    }
+    
+    public ArrayList<VoznjaApp> sveVoznjePrihvaceneApp(String vozacId){
+        ArrayList<VoznjaApp> prihvacene = new ArrayList<VoznjaApp>();
+        for (VoznjaApp voznjaApp : voznje){
+            if(voznjaApp.isPostoji() && voznjaApp.getStatusVoznje().equals(StatusVoznje.PRIHVACENA) && voznjaApp.getIdVozaca().equals(vozacId)){
+                prihvacene.add(voznjaApp);
+            }
+        }
+        return prihvacene;
     }
 
     public Vozac nadjiVozaca (String username) {
@@ -190,7 +202,25 @@ public class TaxiSluzba {
         GregorianCalendar vreme = new GregorianCalendar(godina, mesec-1, dan, sat, minuta);
         return vreme;
     }
-
+    
+    public ArrayList<VoznjaApp> sveVoznjeDodelaIdApp(String vozacId){
+        ArrayList<VoznjaApp> dodela = new ArrayList<VoznjaApp>();
+        for ( VoznjaApp voznjaApp : voznje) {
+            if (voznjaApp.isPostoji() && voznjaApp.getStatusVoznje().equals(StatusVoznje.DODELJENA) && voznjaApp.getIdVozaca().equals(vozacId)){
+                dodela.add(voznjaApp);
+            }
+        }
+        return dodela;
+    }
+    
+    public VoznjaApp nadjiVoznjuIdApp(String id){
+        for(VoznjaApp voznjaApp:voznje){
+            if(voznjaApp.getId().equals(id)){
+                return voznjaApp;
+            }
+        }
+        return null;
+    }
 
     public void loadMusterije() {
         try {
@@ -482,6 +512,21 @@ public class TaxiSluzba {
             }
         }
         return prihvacene;
+    }
+    
+    public void savePonude(){
+        try{
+            File file = new File("src/com/jojicluka/text/ponude.txt");
+            BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+            String s = "";
+            for(Ponuda ponuda: ponude){
+                s+= ponuda.getIdVozaca() + "|" + ponuda.getVreme() + "|" + ponuda.getUsernameVozaca() + "|" + ponuda.getIdVoznje() + "\n";
+            }
+            bw.write(s);
+            bw.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void saveVoznjeTel(){

@@ -82,7 +82,7 @@ public class DispecerProzorPrikaz extends JFrame{
 				
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					PretragaVozaca pv = new PretragaVozaca(taxiSluzba);
+					DispecerPretragaVozaca pv = new DispecerPretragaVozaca(taxiSluzba);
 					pv.setVisible(true);				
 				}
 			});
