@@ -2,13 +2,13 @@ package korisnik;
 
 public class Vozac extends Korisnik {
 	
-	  private int plata;
-	  private int brClanskeKarte;
-	  private boolean postoji;
+	 private int plata;
+	 private int brClanskeKarte;
+	 private boolean postoji;
 	  
-	  public Vozac(){
+	 public Vozac(){
 		  
-	  }
+	 }
 
 	public Vozac(int plata, int brClanskeKarte, boolean postoji) {
 		super();
