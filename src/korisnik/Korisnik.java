@@ -101,11 +101,4 @@ public abstract class Korisnik {
 	public void setBrTel(long brTel) {
 		this.brTel = brTel;
 	}
-
-	@Override
-	public String toString() {
-		return "Korisnik [id=" + id + ", username=" + username + ", password=" + password + ", ime=" + ime
-				+ ", prezime=" + prezime + ", jmbg=" + jmbg + ", adress=" + adress + ", pol=" + pol + ", brTel=" + brTel
-				+ "]";
-	}
 }

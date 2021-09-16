@@ -46,16 +46,16 @@ public class Login extends JFrame {
         mainPanel.add(btnVozac);
 
         lblTitle.setBounds(220, 80, 300, 50);
-        lblTitle.setFont(new Font("Helvetica Neue", Font.BOLD, 20));
+        lblTitle.setFont(new Font("Arial", Font.BOLD, 20));
         mainPanel.add(lblTitle);
         lblDispecer.setBounds(95,340,100,60);
-        lblDispecer.setFont(new Font("Helvetica Neue", Font.PLAIN, 18));
+        lblDispecer.setFont(new Font("Arial", Font.PLAIN, 18));
         mainPanel.add(lblDispecer);
         lblMusterija.setBounds(305,340,100,60);
-        lblMusterija.setFont(new Font("Helvetica Neue", Font.PLAIN, 18));
+        lblMusterija.setFont(new Font("Arial", Font.PLAIN, 18));
         mainPanel.add(lblMusterija);
         lblVozac.setBounds(525,340,100,60);
-        lblVozac.setFont(new Font("Helvetica Neue", Font.PLAIN, 18));
+        lblVozac.setFont(new Font("Arial", Font.PLAIN, 18));
         mainPanel.add(lblVozac);
 
         btnDispecer.addActionListener(new ActionListener() {

@@ -1,1 +1,3 @@
-0|2021-09-16|Sever 5|Jug 7|Korisnik [id=null, username=null, password=null, ime=null, prezime=null, jmbg=0, adress=null, pol=null, brTel=0]|Vozac [plata=0, brClanskeKarte=0, postoji=false, id=null, username=null, password=null, ime=null, prezime=null, jmbg=0, adress=null, pol=null, brTel=0]|0|0|PRIHVACENA|true|101|201
+0|2021-09-16|jug 5|zapad 8|korisnik.Musterija@230ba425|korisnik.Vozac@7d0a94|0|0|KREIRANA|true|101|0
+1|2021-09-16|istok 5|sever 12|korisnik.Musterija@2c70aea1|korisnik.Vozac@28f3d5a0|0|0|KREIRANA|true|101|0
+2|2021-09-16|jugoistok 3|severozapad 31|korisnik.Musterija@6003fa23|korisnik.Vozac@7eda091a|0|0|KREIRANA|true|101|0

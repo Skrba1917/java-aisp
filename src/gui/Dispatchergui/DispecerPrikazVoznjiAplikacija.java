@@ -45,6 +45,7 @@ public class DispecerPrikazVoznjiAplikacija extends JFrame {
         }
         DefaultTableModel dtm = new DefaultTableModel(content,glava);
         tabela = new JTable(dtm);
+        tabela.setAutoCreateRowSorter(true);
         tabela.setRowSelectionAllowed(true);
         tabela.setColumnSelectionAllowed(false);
         tabela.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);

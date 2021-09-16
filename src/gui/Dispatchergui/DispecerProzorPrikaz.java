@@ -19,6 +19,7 @@ public class DispecerProzorPrikaz extends JFrame{
 	    private JButton btnPrikazVoznjiApp = new JButton("Prikaz voznji narucene aplikacijom");
 	    private JButton btnPrikazAutomobila = new JButton("Prikaz svih automobila");
 	    private JButton btnDodelaVoznje = new JButton("Dodeli voznje vozacu");
+	    private JButton btnPretragaVozaca = new JButton("Pretrazi vozaca");
 	    private JToolBar toolbar = new JToolBar();
 	    private JTable tabela;
 
@@ -34,6 +35,7 @@ public class DispecerProzorPrikaz extends JFrame{
 	        toolbar.add(btnPrikazVoznjiApp);
 	        toolbar.add(btnDodelaVoznje);
 	        toolbar.add(btnPrikazAutomobila);
+	        toolbar.add(btnPretragaVozaca);
 	        add(toolbar, BorderLayout.NORTH);
 
 	        btnPrikazVozaca.addActionListener(new ActionListener() {
@@ -75,6 +77,14 @@ public class DispecerProzorPrikaz extends JFrame{
 	                dpa.setVisible(true);
 	            }
 	        });
-	    }
-
+	        
+	        btnPretragaVozaca.addActionListener(new ActionListener() {
+				
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					PretragaVozaca pv = new PretragaVozaca(taxiSluzba);
+					pv.setVisible(true);				
+				}
+			});
+	    }	    
 }

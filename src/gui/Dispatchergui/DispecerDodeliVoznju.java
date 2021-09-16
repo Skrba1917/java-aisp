@@ -63,7 +63,7 @@ public class DispecerDodeliVoznju extends JFrame {
 
         JButton btnDodeli = new JButton("Dodeli");
         btnDodeli.setBounds(20,350,200,40);
-        btnDodeli.setFont(new Font("Helvetica Neue", Font.BOLD, 16));
+        btnDodeli.setFont(new Font("Arial", Font.BOLD, 16));
         mainPanel.add(btnDodeli);
 
         JComboBox comboBox = new JComboBox();

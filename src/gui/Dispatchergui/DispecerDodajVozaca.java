@@ -45,7 +45,7 @@ public class DispecerDodajVozaca extends JFrame {
 
         JLabel lblUsername = new JLabel("Username: ");
         lblUsername.setBounds(20,50,150,40);
-        lblUsername.setFont(new Font("Helvetica Neue", Font.BOLD,14));
+        lblUsername.setFont(new Font("Arial", Font.BOLD,14));
         mainPanel.add(lblUsername);
 
         usernameField = new JTextField();
@@ -55,7 +55,7 @@ public class DispecerDodajVozaca extends JFrame {
 
         JLabel lblPassword = new JLabel("Password: ");
         lblPassword.setBounds(20,100,150,40);
-        lblPassword.setFont(new Font("Helvetica Neue", Font.BOLD,14));
+        lblPassword.setFont(new Font("Arial", Font.BOLD,14));
         mainPanel.add(lblPassword);
 
         passwordField = new JTextField();
@@ -65,7 +65,7 @@ public class DispecerDodajVozaca extends JFrame {
 
         JLabel lblIme = new JLabel("Ime: ");
         lblIme.setBounds(20,150,150,40);
-        lblIme.setFont(new Font("Helvetica Neue", Font.BOLD,14));
+        lblIme.setFont(new Font("Arial", Font.BOLD,14));
         mainPanel.add(lblIme);
 
         imeField = new JTextField();
@@ -75,7 +75,7 @@ public class DispecerDodajVozaca extends JFrame {
 
         JLabel lblPrezime = new JLabel("Prezime: ");
         lblPrezime.setBounds(20,200,150,40);
-        lblPrezime.setFont(new Font("Helvetica Neue", Font.BOLD,14));
+        lblPrezime.setFont(new Font("Arial", Font.BOLD,14));
         mainPanel.add(lblPrezime);
 
         prezimeField = new JTextField();
@@ -85,7 +85,7 @@ public class DispecerDodajVozaca extends JFrame {
 
         JLabel lblJmbg = new JLabel("JMBG: ");
         lblJmbg.setBounds(20,250,150,40);
-        lblJmbg.setFont(new Font("Helvetica Neue", Font.BOLD,14));
+        lblJmbg.setFont(new Font("Arial", Font.BOLD,14));
         mainPanel.add(lblJmbg);
 
         jmbgField = new JTextField();
@@ -95,7 +95,7 @@ public class DispecerDodajVozaca extends JFrame {
 
         JLabel lblAdress = new JLabel("Adresa: ");
         lblAdress.setBounds(20,300,150,40);
-        lblAdress.setFont(new Font("Helvetica Neue", Font.BOLD,14));
+        lblAdress.setFont(new Font("Arial", Font.BOLD,14));
         mainPanel.add(lblAdress);
 
         adressField = new JTextField();
@@ -105,19 +105,19 @@ public class DispecerDodajVozaca extends JFrame {
 
         JLabel lblPol = new JLabel("Pol: ");
         lblPol.setBounds(20,350,150,40);
-        lblPol.setFont(new Font("Helvetica Neue", Font.BOLD,14));
+        lblPol.setFont(new Font("Arial", Font.BOLD,14));
         mainPanel.add(lblPol);
 
         JComboBox comboBox = new JComboBox();
         comboBox.setModel(new DefaultComboBoxModel(Pol.values()));
         comboBox.setBounds(160,350,200,40);
-        comboBox.setFont(new Font("Helvetica Neue", Font.BOLD,14));
+        comboBox.setFont(new Font("Arial", Font.BOLD,14));
         comboBox.setMaximumRowCount(2);
         mainPanel.add(comboBox);
 
         JLabel lblBrTel = new JLabel("Broj telefona: ");
         lblBrTel.setBounds(20,400,150,40);
-        lblBrTel.setFont(new Font("Helvetica Neue", Font.BOLD,14));
+        lblBrTel.setFont(new Font("Arial", Font.BOLD,14));
         mainPanel.add(lblBrTel);
 
         brTelField = new JTextField();
@@ -127,7 +127,7 @@ public class DispecerDodajVozaca extends JFrame {
 
         JLabel lblPlata = new JLabel("Plata: ");
         lblPlata.setBounds(460,50,150,40);
-        lblPlata.setFont(new Font("Helvetica Neue", Font.BOLD,14));
+        lblPlata.setFont(new Font("Arial", Font.BOLD,14));
         mainPanel.add(lblPlata);
 
         plataField = new JTextField();
@@ -137,7 +137,7 @@ public class DispecerDodajVozaca extends JFrame {
 
         JLabel lblBrClanskeKarte = new JLabel("Broj clanske karte: ");
         lblBrClanskeKarte.setBounds(460,100,150,40);
-        lblBrClanskeKarte.setFont(new Font("Helvetica Neue", Font.BOLD,14));
+        lblBrClanskeKarte.setFont(new Font("Arial", Font.BOLD,14));
         mainPanel.add(lblBrClanskeKarte);
 
         brClanskeKarteField = new JTextField();
@@ -147,7 +147,7 @@ public class DispecerDodajVozaca extends JFrame {
 
         JButton btnDodaj = new JButton("Dodaj");
         btnDodaj.setBounds(400,520,150,40);
-        btnDodaj.setFont(new Font("Helvetica Neue", Font.BOLD, 14));
+        btnDodaj.setFont(new Font("Arial", Font.BOLD, 14));
         mainPanel.add(btnDodaj);
 
 

@@ -37,7 +37,7 @@ public class NarucivanjeTelefonom extends JFrame {
 
         JLabel lblAp = new JLabel("Unos adrese polaska: ");
         lblAp.setBounds(75, 40, 180, 40);
-        lblAp.setFont(new Font("Helvetica neue", Font.BOLD, 14));
+        lblAp.setFont(new Font("Arial", Font.BOLD, 14));
         mainPanel.add(lblAp);
 
         adresaDestinacijeField = new JTextField();
@@ -47,7 +47,7 @@ public class NarucivanjeTelefonom extends JFrame {
 
         JLabel lblAd = new JLabel("Unos adrese destinacije: ");
         lblAd.setBounds(75, 140, 180, 40);
-        lblAd.setFont(new Font("Helvetica neue", Font.BOLD, 14));
+        lblAd.setFont(new Font("Arial", Font.BOLD, 14));
         mainPanel.add(lblAd);
 
         adresaPolaskaField = new JTextField();
@@ -56,7 +56,7 @@ public class NarucivanjeTelefonom extends JFrame {
         mainPanel.add(adresaPolaskaField);
 
         btnNaruci = new JButton("Naruci");
-        btnNaruci.setFont(new Font("Helvetica Neue", Font.BOLD,15));
+        btnNaruci.setFont(new Font("Arial", Font.BOLD,15));
         btnNaruci.setBounds(300,220,150,75);
         mainPanel.add(btnNaruci);
 

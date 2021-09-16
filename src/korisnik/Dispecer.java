@@ -52,11 +52,5 @@ public class Dispecer extends Korisnik {
 		this.postoji = postoji;
 	}
 
-	@Override
-	public String toString() {
-		return "Dispecer [plata=" + plata + ", brTelLinije=" + brTelLinije + ", telOdeljenje=" + telOdeljenje
-				+ ", postoji=" + postoji + ", id=" + id + ", username=" + username + ", password=" + password + ", ime="
-				+ ime + ", prezime=" + prezime + ", jmbg=" + jmbg + ", adress=" + adress + ", pol=" + pol + ", brTel="
-				+ brTel + "]";
-	}	
+
 }

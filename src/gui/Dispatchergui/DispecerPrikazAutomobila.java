@@ -22,8 +22,7 @@ public class DispecerPrikazAutomobila extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         String [] glava = new String[] {
                 "Model", "Proizvodjac", "Godina proizvodnje", "Broj tablica", "ID vozila", "Vrsta",
-                "ID Vozaca"
-        };
+                "ID Vozaca"};
         automobili = taxiSluzba.sviAutomobili();
         Object [][] content = new Object [automobili.size()][glava.length];
 
@@ -39,6 +38,7 @@ public class DispecerPrikazAutomobila extends JFrame {
         }
         DefaultTableModel dtm = new DefaultTableModel(content,glava);
         tabela = new JTable(dtm);
+        tabela.setAutoCreateRowSorter(true);
         tabela.setRowSelectionAllowed(true);
         tabela.setColumnSelectionAllowed(false);
         tabela.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);

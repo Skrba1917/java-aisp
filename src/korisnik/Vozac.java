@@ -44,10 +44,4 @@ public class Vozac extends Korisnik {
 		this.postoji = postoji;
 	}
 
-	@Override
-	public String toString() {
-		return "Vozac [plata=" + plata + ", brClanskeKarte=" + brClanskeKarte + ", postoji=" + postoji + ", id=" + id
-				+ ", username=" + username + ", password=" + password + ", ime=" + ime + ", prezime=" + prezime
-				+ ", jmbg=" + jmbg + ", adress=" + adress + ", pol=" + pol + ", brTel=" + brTel + "]";
-	}
 }

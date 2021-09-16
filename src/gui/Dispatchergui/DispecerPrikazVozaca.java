@@ -62,17 +62,18 @@ public class DispecerPrikazVozaca extends JFrame{
         }
         DefaultTableModel dtm = new DefaultTableModel(content,glava);
         tabela = new JTable(dtm);
+        tabela.setAutoCreateRowSorter(true);
         tabela.setRowSelectionAllowed(true);
         tabela.setColumnSelectionAllowed(false);
         tabela.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         tabela.setDefaultEditor(Object.class, null);
         scrollPane.setViewportView(tabela);
         btnDodajVozaca = new JButton("Dodaj");
-        btnDodajVozaca.setFont(new Font("Helvetica Neue", Font.BOLD,12));
+        btnDodajVozaca.setFont(new Font("Arial", Font.BOLD,12));
         btnIzmeniVozaca = new JButton("Izmeni");
-        btnIzmeniVozaca.setFont(new Font("Helvetica Neue", Font.BOLD,12));
+        btnIzmeniVozaca.setFont(new Font("Arial", Font.BOLD,12));
         btnObrisiVozaca = new JButton("Obrisi");
-        btnObrisiVozaca.setFont(new Font("Helvetica Neue", Font.BOLD,12));
+        btnObrisiVozaca.setFont(new Font("Arial", Font.BOLD,12));
         btnObrisiVozaca.setBounds(200,400,120,60);
         btnDodajVozaca.setBounds(400,400,120,60);
         btnIzmeniVozaca.setBounds(600,400,120,60);
