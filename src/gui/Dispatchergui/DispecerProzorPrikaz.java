@@ -20,6 +20,7 @@ public class DispecerProzorPrikaz extends JFrame{
 	    private JButton btnPrikazAutomobila = new JButton("Prikaz svih automobila");
 	    private JButton btnDodelaVoznje = new JButton("Dodeli voznje vozacu");
 	    private JButton btnPretragaVozaca = new JButton("Pretrazi vozaca");
+	    private JButton btnAukcija = new JButton("Aukcija");
 	    private JToolBar toolbar = new JToolBar();
 	    private JTable tabela;
 
@@ -36,6 +37,7 @@ public class DispecerProzorPrikaz extends JFrame{
 	        toolbar.add(btnDodelaVoznje);
 	        toolbar.add(btnPrikazAutomobila);
 	        toolbar.add(btnPretragaVozaca);
+	        toolbar.add(btnAukcija);
 	        add(toolbar, BorderLayout.NORTH);
 
 	        btnPrikazVozaca.addActionListener(new ActionListener() {
@@ -86,5 +88,14 @@ public class DispecerProzorPrikaz extends JFrame{
 					pv.setVisible(true);				
 				}
 			});
-	    }	    
-}
+	        
+	        btnAukcija.addActionListener(new ActionListener() {
+	            @Override
+	            public void actionPerformed(ActionEvent e) {
+	                DispecerAukcija da = new DispecerAukcija(taxiSluzba);
+	                da.setVisible(true);
+	            }
+	        });
+	    }
+	  }	
+

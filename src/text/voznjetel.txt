@@ -1,4 +1,5 @@
-0|2021-09-16|jug 5|zapad 8|korisnik.Musterija@2d898bb7|korisnik.Vozac@722a159f|10|31|ZAVRSENA|true|101|201
-1|2021-09-16|istok 5|sever 12|korisnik.Musterija@61610759|korisnik.Vozac@50997da2|0|0|KREIRANA|true|101|0
-2|2021-09-16|jugoistok 3|severozapad 31|korisnik.Musterija@31ac9035|korisnik.Vozac@1308ed72|0|0|KREIRANA|true|101|0
-3|2021-09-17|sever 19|jug 15|korisnik.Musterija@7a3a6b85|korisnik.Vozac@61d56d0d|0|0|KREIRANA|true|101|0
+0|2021-09-16|jug 5|zapad 8|korisnik.Musterija@53c4ecb7|korisnik.Vozac@6a28d214|10|31|ZAVRSENA|true|101|201
+1|2021-09-16|istok 5|sever 12|korisnik.Musterija@39f428bd|korisnik.Vozac@2ace6a16|0|0|PRIHVACENA|true|101|202
+2|2021-09-16|jugoistok 3|severozapad 31|korisnik.Musterija@5e9b9aac|korisnik.Vozac@720f4b19|0|0|PRIHVACENA|true|101|201
+3|2021-09-17|sever 19|jug 15|korisnik.Musterija@6a262425|korisnik.Vozac@33e16dad|0|0|KREIRANA|true|101|0
+4|2021-09-17|severozapad 33|istok 18|korisnik.Musterija@31addf87|korisnik.Vozac@39720d28|0|0|KREIRANA|true|101|0
