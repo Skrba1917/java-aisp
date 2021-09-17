@@ -134,7 +134,9 @@ public class TaxiSluzba {
         return voznje;
     }
     
-    public ArrayList<Ponuda> getPonude(){return ponude;}
+    public ArrayList<Ponuda> getPonude(){
+    	return ponude;
+    }
 
     public Musterija nadjiMusteriju (String username) {
         for (Musterija musterija : musterije) {
