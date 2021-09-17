@@ -23,6 +23,7 @@ public class MusterijaProzorPrikaz extends JFrame {
 	private JButton btnNaruci = new JButton("Naruci voznju telefonom");
     private JTable tabela;
     private JToolBar toolbar = new JToolBar();
+    private JButton btnNaruciApp = new JButton("Naruci voznju aplikacijom");
     private JLabel lblIstorija = new JLabel("Istorija mojih voznji: ");
 
     private ArrayList<VoznjaTel> voznje = new ArrayList<>();
@@ -34,6 +35,7 @@ public class MusterijaProzorPrikaz extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         toolbar.add(btnNaruci);
+        toolbar.add(btnNaruciApp);
         add(toolbar, BorderLayout.NORTH);
         String[] glava = new String[] {
                 "Datum", "Polazak", "Destinacija", "Vozac","KM predjeni", "Trajanje",
@@ -72,6 +74,15 @@ public class MusterijaProzorPrikaz extends JFrame {
                 nt.setVisible(true);
             }
         });
+        
+        btnNaruciApp.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MusterijaNaruciApp mna = new MusterijaNaruciApp(taxiSluzba,username);
+                mna.setVisible(true);
+            }
+        });
     }
+ }
 
-}
+

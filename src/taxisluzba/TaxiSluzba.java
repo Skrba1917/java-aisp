@@ -517,7 +517,7 @@ public class TaxiSluzba {
     
     public void savePonude(){
         try{
-            File file = new File("src/com/jojicluka/text/ponude.txt");
+            File file = new File("src/text/ponude.txt");
             BufferedWriter bw = new BufferedWriter(new FileWriter(file));
             String s = "";
             for(Ponuda ponuda: ponude){

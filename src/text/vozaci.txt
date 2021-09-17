@@ -1,3 +1,5 @@
 201|nikola|123|Nikola|Nikolic|115111221|Sever 1|Muski|1111901|65000|01011|true
 202|predrag|123|Predrag|Predragovic|1917181981|Jug 3|Muski|15111|45000|11111|true
 203|jovana|123|Jovana|Jovanovic|115111611|Zapad 21|Zenski|971718|55000|00321|true
+204|bojan|123|Bojan|Bojanic|1311211|Sever 2|Muski|1009101|65000|101101|true
+
