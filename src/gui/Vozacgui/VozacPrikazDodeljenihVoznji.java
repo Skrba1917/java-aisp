@@ -83,7 +83,7 @@ public class VozacPrikazDodeljenihVoznji extends JFrame {
                     voznjaTel.setStatusVoznje(StatusVoznje.PRIHVACENA);
                     dtm.removeRow(row);
                     taxiSluzba.saveVoznjeTel();
-                    JOptionPane.showMessageDialog(null, "Izabrani voznja je prihvacena!", "Prihvatanje voznje", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Izabrana voznja je prihvacena!", "Prihvatanje voznje", JOptionPane.INFORMATION_MESSAGE);
                 }
             }
             }
@@ -103,7 +103,7 @@ public class VozacPrikazDodeljenihVoznji extends JFrame {
                         voznjaTel.setStatusVoznje(StatusVoznje.ODBIJENA);
                         dtm.removeRow(row);
                         taxiSluzba.saveVoznjeTel();
-                        JOptionPane.showMessageDialog(null, "Izabrani voznja je odbijena!", "Odbijanje voznje", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Izabrana voznja je odbijena!", "Odbijanje voznje", JOptionPane.INFORMATION_MESSAGE);
                     }
                 }
             }

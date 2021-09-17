@@ -32,7 +32,7 @@ public class VozacUnesiVreme extends JFrame {
 
         JLabel lblVreme = new JLabel("Unos vremena: ");
         lblVreme.setBounds(75, 40, 180, 40);
-        lblVreme.setFont(new Font("Helvetica neue", Font.BOLD, 14));
+        lblVreme.setFont(new Font("Arial", Font.BOLD, 14));
         mainPanel.add(lblVreme);
 
         vremeField = new JTextField();
@@ -41,7 +41,7 @@ public class VozacUnesiVreme extends JFrame {
         mainPanel.add(vremeField);
 
         btnPonudi = new JButton("Ponudi");
-        btnPonudi.setFont(new Font("Helvetica Neue", Font.BOLD,15));
+        btnPonudi.setFont(new Font("Arial", Font.BOLD,15));
         btnPonudi.setBounds(300,220,150,75);
         mainPanel.add(btnPonudi);
 

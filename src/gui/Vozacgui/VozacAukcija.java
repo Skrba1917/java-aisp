@@ -60,7 +60,7 @@ public class VozacAukcija extends JFrame {
 
         JButton btnUnesiVreme = new JButton("Unesi vreme");
         btnUnesiVreme.setBounds(20,350,200,40);
-        btnUnesiVreme.setFont(new Font("Helvetica Neue", Font.BOLD, 16));
+        btnUnesiVreme.setFont(new Font("Arial", Font.BOLD, 16));
         mainPanel.add(btnUnesiVreme);
 
         btnUnesiVreme.addActionListener(new ActionListener() {
@@ -81,5 +81,4 @@ public class VozacAukcija extends JFrame {
             }
         });
     }
-
 }

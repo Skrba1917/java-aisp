@@ -46,6 +46,14 @@ public class VozacProzorPrikaz extends JFrame {
             }
         });
         
+        btnPrikazVoznjiPrihvacenih.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                VozacPrikazDodeljenihAppVoznji vpdav = new VozacPrikazDodeljenihAppVoznji(taxiSluzba, username);
+                vpdav.setVisible(true);
+            }
+        });
+        
         btnPrikazPrihvacenihVoznjiApp.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
